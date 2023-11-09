@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main_header {
+    background: #ffffff;
+    border-bottom: 1px #f4f4f4 solid;
+    z-index: 1;
+    padding: 20px 0; /* Ajustei o padding para adicionar espaço acima e abaixo do cabeçalho */
+}
+
+.main_header .content {
+    float: left;
+}
+
+.main_header_logo {
+    text-align: center;
+    margin: 0 auto; /* Centralize o logotipo horizontalmente */
+    width: 390px;
+    padding: 20px 0;
+}
+
+.main_header_logo img {
+    height: 69px;
+}
+
+.testee {
+    max-width: 250px;
+    margin: 0 auto; /* Centralize o elemento .testee horizontalmente */
+    padding: 20px; /* Ajustei o padding para uma aparência mais equilibrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%; /* Alterei a largura para 100% para preencher o contêiner .testee */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; /* Alterei a largura para 100% para preencher o contêiner .testee */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

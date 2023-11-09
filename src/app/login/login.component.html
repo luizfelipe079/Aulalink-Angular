@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="login.component.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="main_header container">
+        <div class="content">
+
+            <div class="main_header_logo">
+                <img src="../../assets/AulaLink.png" alt="logo.png" title="Loop Nerd" />
+            </div>
+
+        </div>
+
+        <nav class="bg menu-nav-slide">
+            <a [routerLink]="'/home'"><span data-hover="Iniciar">Inicio</span></a>
+            <a [routerLink]="'/cadastrar'"><span data-hover="Cadastrar">Cadastrar</span></a>
+            <a [routerLink]="'/entrar'"><span data-hover="Login">Login</span></a>
+            <a [routerLink]="'/sobre'"><span data-hover="Sobre">Sobre</span></a>
+        </nav>
+
+    </header>
+
+    <div class="testee">
+        <form (submit)="login()" id="login-form">
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" required [(ngModel)]="email">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required [(ngModel)]="senha">
+          <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+      </div>
+
+    <footer>
+        © 2023 AulaLink - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
